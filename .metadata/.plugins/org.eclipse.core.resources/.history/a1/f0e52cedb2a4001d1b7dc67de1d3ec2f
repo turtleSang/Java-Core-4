@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+/*
+ * Xử lý nghiệp vụ liên quan đến giám đốc
+ * */
+public class GiamDoc extends NhanSu {
+	//1.Attribute
+	private float coPhan;
+	//2.Get set method
+	
+	public float getCoPhan() {
+		return coPhan;
+	}
+
+	public void setCoPhan(float coPhan) {
+		this.coPhan = coPhan;
+	}
+
+	//3.Constructor
+	public GiamDoc() {
+		
+	}
+
+	
+
+	public GiamDoc(String maSo, String hoTen, String soDienThoai, float soNgayLamViec, double luong
+			, float coPhan) {
+		super(maSo, hoTen, soDienThoai, soNgayLamViec, luong);
+		this.coPhan = coPhan;
+	}
+	//4.Input output
+	@Override
+	public void nhap(Scanner scan) {
+		// TODO Auto-generated method stub
+		super.nhap(scan);
+		System.out.print("Nhập số cổ phần: ");
+		this.coPhan = Float.parseFloat(scan.nextLine());
+	}
+
+	@Override
+	public void xuat() {
+		// TODO Auto-generated method stub
+		super.xuat();
+	}
+	//5.Business
+	
+
+}

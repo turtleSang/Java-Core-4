@@ -1,0 +1,43 @@
+/*
+ * Mục đích: Xử lý nghiệp vụ cho lớp employee
+ * người tạo Thanh Sang
+ * ngày tạo 03/02/2023
+ * version: 1.0
+ * */
+public class Employee extends Person {
+	//1.Attribute
+	private float soNgayLamViec;
+	private int luongTheoNgay;
+	//2.Get set method
+	
+	public float getSoNgayLamViec() {
+		return soNgayLamViec;
+	}
+
+	public void setSoNgayLamViec(float soNgayLamViec) {
+		this.soNgayLamViec = soNgayLamViec;
+	}
+
+	public int getLuongTheoNgay() {
+		return luongTheoNgay;
+	}
+
+	public void setLuongTheoNgay(int luongTheoNgay) {
+		this.luongTheoNgay = luongTheoNgay;
+	}
+
+	//3.Constructor
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Employee(String hoTen, String diaChi, String ma, String email,
+			float soNgayLam, int luongTheoNgay) {
+		super(hoTen, diaChi, ma, email);
+		
+	}
+	
+	//4.Input output method
+	//5.Business method
+	
+}

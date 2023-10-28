@@ -1,0 +1,19 @@
+
+public class Sturdent extends Person {
+	//1.Attribute
+	private float diemToan;
+	private float diemLy;
+	private float diemHoa;
+	//2.Get set methods
+	//3.Constructor
+	public Sturdent() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Sturdent(String hoTen, String diaChi, String ma, String email) {
+		super(hoTen, diaChi, ma, email);
+		// TODO Auto-generated constructor stub
+	}
+	//4.Input output method
+	//5.Business method
+}

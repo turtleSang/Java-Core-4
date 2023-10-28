@@ -1,0 +1,23 @@
+/*
+ * Mục đích: Quản lý loại Student employee customer ở mức cha
+ * Người tạo: Thanh Sang
+ * ngày tạo: 02/02/2023
+ * Version: 1.0
+ * */
+public class Person {
+	//1. Attribute
+	protected String hoTen;
+	protected String diaChi;
+	protected String ma;
+	protected String email;
+	//2. Get Set method
+	
+	//3. Constructor
+	public Person() {
+		// TODO Auto-generated constructor stub
+	}
+	//4. Input Output method
+	//5. Business method
+
+	
+}

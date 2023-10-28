@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+/*
+ * Mục Đích quản lý nghiệp vụ liên quan đến giao dịch tiền tệ
+ * Người tạo: Thanh Sang
+ * Version: 1.0
+ * */
+public class GiaoDichTienTe extends GiaoDich {
+	// 1.Attribute
+	private float tyGia;
+	private int loaiTienTe;
+
+	// 2.Get set method
+	// 3.Constructor
+	public GiaoDichTienTe() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+
+	public GiaoDichTienTe(int maGiaoDich, int ngay, int thang, int nam, float donGia, int soLuong,
+			float tyGia, int loai) {
+		super(maGiaoDich, ngay, thang, nam, donGia, soLuong);
+		this.tyGia = tyGia;
+		this.loaiTienTe = loai;
+	}
+
+
+
+	// 4.Input output method
+	@Override
+	public void nhap(Scanner scan) {
+		super.nhap(scan);
+		System.out.print("Nhập tỷ giá");
+		this.tyGia = Float.parseFloat(scan.nextLine());
+		System.out.print("Nhập loại tiền tệ(1.VND , 2.USD, 3.EURO)");
+		this.loaiTienTe = Integer.parseInt(scan.nextLine());
+	}
+
+	@Override
+	public void xuat() {
+		super.xuat();
+		String temp;
+		if (this.loaiTienTe == 1) {
+			temp = "VND";
+		} else if (this.loaiTienTe == 2) {
+			temp = "USD";
+		} else {
+			temp = "EURO";
+		}
+		System.out.println("\t Loại tiền: " + temp + "Tỷ Giá: " + this.tyGia + "Thành Tiền" + this.thanhTien);
+	}
+
+	// 5.Business method
+	@Override
+	public void tinhTien() {
+		if (this.loaiTienTe == 1) {
+			this.thanhTien = this.soLuong * this.donGia;
+		} else {
+			this.thanhTien = this.soLuong*this.donGia*this.tyGia;
+		}
+	}
+
+}

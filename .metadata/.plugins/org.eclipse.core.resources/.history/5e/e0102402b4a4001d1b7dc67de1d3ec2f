@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+/*
+ * Mục đích: Quản lý danh sách nhân sự
+ * */
+public class DanhSachNhanSu {
+	// 1.Attribute
+	ArrayList<NhanSu> listNhanSu;
+	// 2.Get set
+	
+	public ArrayList<NhanSu> getListNhanSu() {
+		return listNhanSu;
+	}
+
+	public void setListNhanSu(ArrayList<NhanSu> listNhanSu) {
+		this.listNhanSu = listNhanSu;
+	}
+
+	// 3.Constructor
+	public DanhSachNhanSu() {
+		this.listNhanSu = new ArrayList<NhanSu>();
+	}
+	// 4.Get Set method
+	// 5.Business method
+	
+
+}

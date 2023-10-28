@@ -1,0 +1,13 @@
+
+public class Sturdent extends Person {
+
+	public Sturdent() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Sturdent(String hoTen, String diaChi, String ma, String email) {
+		super(hoTen, diaChi, ma, email);
+		// TODO Auto-generated constructor stub
+	}
+
+}

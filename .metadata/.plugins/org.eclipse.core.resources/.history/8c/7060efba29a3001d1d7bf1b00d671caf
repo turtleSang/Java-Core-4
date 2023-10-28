@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class XuLy {
+	static Scanner scan = new Scanner(System.in);
+	public XuLy() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	private static void inMenu() {
+		System.out.println("Chọn Thực hiện");
+		System.out.println("1.Thêm người vào");
+		System.out.println("2. Xuất danh sách");
+		System.out.println("3. Xóa theo mã");
+		System.out.println("4. Sắp xếp theo tên");
+		System.out.println("0. Thoát chương trình");	
+	}
+	
+}

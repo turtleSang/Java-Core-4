@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/*
+ * Mục đích: Quản lý danh sách nhân sự
+ * */
+public class DanhSachNhanSu {
+	// 1.Attribute
+	ArrayList<NhanSu> listNhanSu;
+	// 2.Get set
+	
+	public ArrayList<NhanSu> getListNhanSu() {
+		return listNhanSu;
+	}
+
+	public void setListNhanSu(ArrayList<NhanSu> listNhanSu) {
+		this.listNhanSu = listNhanSu;
+	}
+
+	// 3.Constructor
+	public DanhSachNhanSu() {
+		this.listNhanSu = new ArrayList<NhanSu>();
+	}
+	// 4.Get Set method
+	public void nhap(Scanner scan) {
+		boolean flag = true;
+		do {
+			inMenu();
+			System.out.println("Mời chọn");
+			NhanSu nv;
+			int nhap = Integer.parseInt(scan.nextLine());
+			switch (nhap) {
+			case 0:	
+				flag = false;
+				break;
+			case 1:	
+				 nv = new NhanVienThuong();
+				nv.nhap(scan);
+				this.listNhanSu.add(nv);
+				break;
+			case 2:	
+				nv = new TruongPhong();
+				nv.nhap(scan);
+				this.listNhanSu.add(nv);
+				break;
+			case 3:	
+				break;
+
+			default: break;
+			}
+		} while (flag);
+		
+	}
+	private void inMenu() {
+		System.out.println("1.Nhập nhân viên thường");
+		System.out.println("2.Nhập Trưởng phòng");
+		System.out.println("3.Nhập Giám đốc");
+		System.out.println("0.Thoát về menu Chính");
+	}
+	// 5.Business method
+	
+
+}

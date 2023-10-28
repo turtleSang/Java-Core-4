@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+/*
+ * Mục đích Quản lý nghiệp vụ cho danh sach
+ * người tạo: Thanh Sang
+ * ngày tạo: 26/04/2020
+ * Version: 1.0
+ * */
+public class ListPerson {
+	//1.Attribute
+	private ArrayList<Person> list;
+	//2.Get set method
+	//3. Constructor
+	public ListPerson() {
+		// TODO Auto-generated constructor stub
+	}
+
+	//4. Input output method
+	//5. Business method
+	
+}

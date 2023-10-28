@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/*
+ * Mục đích Quản lý nghiệp vụ cho danh sach
+ * người tạo: Thanh Sang
+ * ngày tạo: 26/04/2020
+ * Version: 1.0
+ * */
+public class ListPerson {
+	//1.Attribute
+	private ArrayList<Person> list;
+	//2.Get set method
+	
+	public ArrayList<Person> getList() {
+		return list;
+	}
+
+	public void setList(ArrayList<Person> list) {
+		this.list = list;
+	}
+
+	//3. Constructor
+	public ListPerson() {
+		list = new ArrayList<Person>();
+	}
+	//4. Input output method
+	private void inMenu() {
+		System.out.println("Vui lòng chọn");
+		System.out.println("1. Nhập student");
+		System.out.println("2. Nhập employee");
+		System.out.println("3. Nhập customer");
+		System.out.println("0. Thoát lại menu chính");
+	}
+	public void nhap(Scanner scan) {
+		boolean flag = true;
+		do {
+			System.out.println("Vui lòng lựa chọn");
+			System.out.println("1. Nhập nhân viên");
+		} while (flag);
+	}
+	//5. Business method
+	
+}

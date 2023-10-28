@@ -1,0 +1,13 @@
+
+public class NhanVienThuong extends NhanSu {
+
+	public NhanVienThuong() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public NhanVienThuong(String maSo, String hoTen, String soDienThoai, float soNgayLamViec, double luong) {
+		super(maSo, hoTen, soDienThoai, soNgayLamViec, luong);
+		// TODO Auto-generated constructor stub
+	}
+
+}

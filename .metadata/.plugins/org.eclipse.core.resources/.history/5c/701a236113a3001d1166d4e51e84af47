@@ -1,0 +1,53 @@
+/*
+ * Mục đích: Quản lý loại Student employee customer ở mức cha
+ * Người tạo: Thanh Sang
+ * ngày tạo: 02/02/2023
+ * Version: 1.0
+ * */
+public class Person {
+	//1. Attribute
+	protected Sting hoTen;
+	protected Sting diaChi;
+	protected Sting ma;
+	protected Sting email;
+	//2. Get Set method
+	public Sting getHoTen() {
+		return hoTen;
+	}
+
+	public void setHoTen(Sting hoTen) {
+		this.hoTen = hoTen;
+	}
+
+	public Sting getDiaChi() {
+		return diaChi;
+	}
+
+	public void setDiaChi(Sting diaChi) {
+		this.diaChi = diaChi;
+	}
+
+	public Sting getMa() {
+		return ma;
+	}
+
+	public void setMa(Sting ma) {
+		this.ma = ma;
+	}
+
+	public Sting getEmail() {
+		return email;
+	}
+
+	public void setEmail(Sting email) {
+		this.email = email;
+	}
+	//3. Constructor
+	public Person() {
+		// TODO Auto-generated constructor stub
+	}
+	//4. Input Output method
+	//5. Business method
+
+	
+}

@@ -1,0 +1,13 @@
+
+public class GiamDoc extends NhanSu {
+
+	public GiamDoc() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public GiamDoc(String maSo, String hoTen, String soDienThoai, float soNgayLamViec, double luong) {
+		super(maSo, hoTen, soDienThoai, soNgayLamViec, luong);
+		// TODO Auto-generated constructor stub
+	}
+
+}

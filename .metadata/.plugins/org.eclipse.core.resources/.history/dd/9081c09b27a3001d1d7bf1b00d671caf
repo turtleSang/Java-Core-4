@@ -1,0 +1,8 @@
+
+public class ListPerson {
+
+	public ListPerson() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

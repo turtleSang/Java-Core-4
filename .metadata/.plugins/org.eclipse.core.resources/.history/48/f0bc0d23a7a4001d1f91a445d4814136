@@ -1,0 +1,55 @@
+/*
+ * Mục đích: Quản lý nghiệp vụ lớp cha về nhân sự
+ * ....
+ * */
+public class NhanSu {
+	//1.Attribute
+	protected String maSo;
+	protected String hoTen;
+	protected String soDienThoai;
+	protected float soNgayLamViec;
+	protected double luong;
+	//2.Get Set method
+	public float getLuong() {
+		return this.luong;
+	}
+	public String getMaSo() {
+		return maSo;
+	}
+
+	public void setMaSo(String maSo) {
+		this.maSo = maSo;
+	}
+
+	public String getHoTen() {
+		return hoTen;
+	}
+
+	public void setHoTen(String hoTen) {
+		this.hoTen = hoTen;
+	}
+
+	public String getSoDienThoai() {
+		return soDienThoai;
+	}
+
+	public void setSoDienThoai(String soDienThoai) {
+		this.soDienThoai = soDienThoai;
+	}
+
+	public float getSoNgayLamViec() {
+		return soNgayLamViec;
+	}
+
+	public void setSoNgayLamViec(float soNgayLamViec) {
+		this.soNgayLamViec = soNgayLamViec;
+	}
+
+	//3.Constructor
+	//4.Input output
+	//5.Business
+	public NhanSu() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

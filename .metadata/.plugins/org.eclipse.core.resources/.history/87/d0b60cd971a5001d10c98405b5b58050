@@ -1,0 +1,55 @@
+/*
+ * Mục đích: Xử lý nghiệp vụ liên quan lớp trưởng phòng
+ * */
+public class TruongPhong extends NhanSu {
+	//Constance
+	final int LUONGNGAY = 200;
+	final int PHUCAP_MOI_NHAN_VIEN_QUAN_LY = 100;
+	//1.Attribute
+	private int soLuongNhanVienDuoiQuyen;
+	//2.GetSet method
+	public TruongPhong() {
+		this.soLuongNhanVienDuoiQuyen = 0;
+	}
+
+	public int getSoLuongNhanVienDuoiQuyen() {
+		return soLuongNhanVienDuoiQuyen;
+	}
+
+	//3.Constructor
+	public void setSoLuongNhanVienDuoiQuyen(int soLuongNhanVienDuoiQuyen) {
+		this.soLuongNhanVienDuoiQuyen = soLuongNhanVienDuoiQuyen;
+	}
+
+	public TruongPhong(String maSo, String hoTen, String soDienThoai,
+			float soNgayLamViec) {
+		super(maSo, hoTen, soDienThoai, soNgayLamViec);
+		this.soLuongNhanVienDuoiQuyen = 0;
+	}
+
+	
+	//4.Input output
+	@Override
+	public void xuat() {
+		super.xuat();
+		System.out.print("\t Số nhân viên dưới quyền: " + this.soLuongNhanVienDuoiQuyen);
+		System.out.print("\t Lương: " + this.luong);
+	}
+
+	
+	
+	//5.Business
+	@Override
+	public void tinhLuong() {
+		// TODO Auto-generated method stub
+		this.luong = this.soNgayLamViec*LUONGNGAY + this.soLuongNhanVienDuoiQuyen*PHUCAP_MOI_NHAN_VIEN_QUAN_LY;
+	}
+	public void tangSoLuongNhanVien() {
+		this.soLuongNhanVienDuoiQuyen++;
+	}
+	public void giamSoLuongNhanVien() {
+		this.soLuongNhanVienDuoiQuyen--;
+	}
+	
+
+}

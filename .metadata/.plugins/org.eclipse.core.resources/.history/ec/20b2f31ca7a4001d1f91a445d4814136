@@ -1,0 +1,19 @@
+/*
+ * Mục đích: Quản lý nghiệp vụ lớp cha về nhân sự
+ * ....
+ * */
+public class NhanSu {
+	//1.Attribute
+	protected String maSo;
+	protected String hoTen;
+	protected String soDienThoai;
+	protected float soNgayLamViec;
+	//2.Get Set method
+	//3.Constructor
+	//4.Input output
+	//5.Business
+	public NhanSu() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

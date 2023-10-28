@@ -1,0 +1,31 @@
+/*
+ * Mục đích: Xử lý nghiệp vụ liên quan lớp trưởng phòng
+ * */
+public class TruongPhong extends NhanSu {
+	//1.Attribute
+	private int soLuongNhanVienDuoiQuyen;
+	//2.GetSet method
+	public TruongPhong() {
+		this.soLuongNhanVienDuoiQuyen = 0;
+	}
+
+	public int getSoLuongNhanVienDuoiQuyen() {
+		return soLuongNhanVienDuoiQuyen;
+	}
+
+	//3.Constructor
+	//4.Input output
+	//5.Business
+	
+	public void setSoLuongNhanVienDuoiQuyen(int soLuongNhanVienDuoiQuyen) {
+		this.soLuongNhanVienDuoiQuyen = soLuongNhanVienDuoiQuyen;
+	}
+
+	public TruongPhong(String maSo, String hoTen, String soDienThoai,
+			float soNgayLamViec, double luong
+			) {
+		super(maSo, hoTen, soDienThoai, soNgayLamViec, luong);
+		this.soLuongNhanVienDuoiQuyen = 0;
+	}
+
+}
